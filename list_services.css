@@ -4,7 +4,8 @@
         justify-content: center;
         flex-direction: column;
         margin: 50px;
-        gap: 100px;
+        gap: 150px;
+        
     }
 
     
@@ -12,6 +13,7 @@
 
         position: relative;
         padding: 15px 30px;
+        margin-bottom:150px ;
 
         height: 15vh;
         width: 30vw;
@@ -21,6 +23,7 @@
         z-index: 0;
         border-radius: 10px;
         animation: anime1 3s linear infinite;
+
     }
 
     .b1::before{
@@ -67,35 +70,45 @@
 
         0%{transform: scale(1);
         rotate:0deg}
-        25%{transform: scale(1.1)}
-        50%{transform: scale(1.2)}
+        25%{transform: scale(1.05)}
+        50%{transform: scale(1.1)}
         100% {transform: scale(1)}
     }
 
 .main-img{
 
-
+    position: relative;;
     border:2px green  solid ;
     border-radius: 30px;
     width: 40vw;
     height: 60vh;
      transition: .3s linear ;
+     
 
 }
 .main-img:hover{
 
    
-    transform: scale(1.2);
-    
+    transform: scale(1.1);
+    top:50px
+
 
 }
 
+button{
+    top: 20px;
+}
+.main-img:hover ~ button{
+    top: 100px;
+}
 .list-shtorki{
 
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 30px;
+    align-items: center;     
+    text-align: center; 
+    gap: 30vh;
     
 
 }
