@@ -46,24 +46,29 @@
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	margin: auto;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: space-between
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-between;
 }
+
 ul {
-  list-style: none
+	list-style: none;
 }
+
 a {
-  text-decoration: none
+	text-decoration: none;
 }
+
 .generic-anchor {
 	color: blue;
-	&:visited {
-		color: blue
-	}
-	&:hover {
-		color: color
-	}
+}
+
+.generic-anchor:visited {
+	color: blue;
+}
+
+.generic-anchor:hover {
+	color: darkblue; /* Исправил ошибку иничиализации - Егор */
 }
 .flex-rw {
   display: flex;
