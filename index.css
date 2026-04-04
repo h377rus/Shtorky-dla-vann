@@ -52,6 +52,8 @@
   background: linear-gradient(#e66465, #9198e5);
 }
 
+
+
 ul {
 	list-style: none;
 }
@@ -59,6 +61,65 @@ ul {
 a {
 	text-decoration: none;
 }
+
+#name-head{
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0.5em;
+}
+
+#about{
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0.5em;
+
+}
+
+#portfolio{
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0.5em;
+}
+
+#popular{
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0.5em;
+}
+
+#panel{
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0.5em;
+}
+
+#News{
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0.5em;
+}
+
+#Contacts{
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0.5em;
+}
+
+
 
 .generic-anchor {
 	color: blue;
