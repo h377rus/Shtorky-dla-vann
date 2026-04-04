@@ -64,6 +64,7 @@
 }
 
 body {
+<<<<<<< HEAD
 	font: 12px "DotGothic16";
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -91,8 +92,13 @@ header {
   height: 15vh;
   margin: 0;
   padding: 0;
-  background: linear-gradient(135deg, #ffb6c1, #ffc0cb, #b0e0e6, #87ceeb);
 }
+=======
+    background: linear-gradient(135deg, #ffb6c1, #ffc0cb, #b0e0e6, #87ceeb);
+}
+
+
+>>>>>>> 33f1de58a484052b8d4fbcdaf3a9257e22aac80a
 
 ul {
 	list-style: none;

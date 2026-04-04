@@ -1,98 +1,51 @@
 @import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Comforter&display=swap');
-
 .dotgothic16-regular { /*главный шрифт(всратый) - Рома*/
     font-family: "DotGothic16", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
 
-.rubik-mono-one-regular {
-  font-family: "Rubik Mono One", monospace;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.comforter-regular {
-  font-family: "Comforter", cursive;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.logo-text1 { /*для главного лого1 - Рома*/
-  font-style: italic;
-  font-family: "Rubik Mono One";
-  font-size: 6vh;
-}
-
-.logo-text2 { /*для главного лого2 - Рома*/
-  font-style: italic;
-  font-family: "Comforter";
-  font-size: 3vh;
+.logo-text { /*для главного лого - Рома*/
+    font-style: italic;
+    font-family: "DotGothic16";
 }
 
 .simple-text { /*для просто текста - Рома*/
-  font-family: "DotGothic16";
-  font-size: 12px;
+    font-family: "DotGothic16";
+    font-size: 12px;
 }
 
 .simple-btn { /*для нормисной кнопки - Рома*/
-  font-family: "DotGothic16";
-  width: 10vw;
-  height: fit-content;
-  border: 7px rgb(174, 174, 174) inset;
-  background-color: rgb(174, 174, 174);
-  text-decoration: underline;
+    font-family: "DotGothic16";
+    width: 10vw;
+    height: fit-content;
+    border: 7px rgb(174, 174, 174) inset;
+    background-color: rgb(174, 174, 174);
+    text-decoration: underline;
 }
 
 .simple-btn:active { /*для нормисной кнопки(при тыке) - Рома*/
-  background-color: rgb(144, 144, 144);
+    background-color: rgb(144, 144, 144);
 }
 
 .big-btn { /*для биг кнопки(пока тот же что и для нормиснойы) - Рома*/
-  font-family: "DotGothic16";
-  width: 10vw;
-  height: fit-content;
-  border: 7px rgb(174, 174, 174) inset;
-  background-color: rgb(174, 174, 174);
-  text-decoration: underline;
+    font-family: "DotGothic16";
+    width: 10vw;
+    height: fit-content;
+    border: 7px rgb(174, 174, 174) inset;
+    background-color: rgb(174, 174, 174);
+    text-decoration: underline;
 }
 
 .big-btn:active { /*для биг кнопки(при тыке) - Рома*/
-  background-color: rgb(144, 144, 144);
+    background-color: rgb(144, 144, 144);
 }
 
 body {
-	font: 12px "DotGothic16";
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	margin: 0;
-  padding: 0%;
-	display: flex;
-	flex-flow: column nowrap;
-	justify-content: space-between;
-  background: linear-gradient(#e66465, #9198e5);
+    background: linear-gradient(135deg, #ffb6c1, #ffc0cb, #b0e0e6, #87ceeb);
 }
 
-header {
-  position: block;
-  border-bottom: 5px solid black;
-  background-image: url('imgs/white-shtorki-background.jpeg');
-  background-size: contain;
-  background-position: center;
-  background-repeat: repeat;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 4vh;
-  width: 100%;
-  height: 15vh;
-  margin: 0;
-  padding: 0;
-  background: linear-gradient(135deg, #ffb6c1, #ffc0cb, #b0e0e6, #87ceeb);
-}
+
 
 ul {
 	list-style: none;
@@ -183,8 +136,9 @@ main {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  color: rgb(0, 0, 0);
-  line-height: 1;
+  font: 1em "Oswald", sans-serif;
+  color: rgb(155,155,155);
+  line-height: 1
 }
 footer {
   background: rgb(55,55,55);

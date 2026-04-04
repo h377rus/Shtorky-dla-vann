@@ -91,7 +91,6 @@ header {
   height: 15vh;
   margin: 0;
   padding: 0;
-  background: linear-gradient(135deg, #ffb6c1, #ffc0cb, #b0e0e6, #87ceeb);
 }
 
 ul {
@@ -101,65 +100,6 @@ ul {
 a {
 	text-decoration: none;
 }
-
-#name-head{
-  display: flex;
-  text-align: center;
-  flex-direction: column;
-  justify-content: center;
-  padding: 0.5em;
-}
-
-#about{
-  display: flex;
-  text-align: center;
-  flex-direction: column;
-  justify-content: center;
-  padding: 0.5em;
-
-}
-
-#portfolio{
-  display: flex;
-  text-align: center;
-  flex-direction: column;
-  justify-content: center;
-  padding: 0.5em;
-}
-
-#popular{
-  display: flex;
-  text-align: center;
-  flex-direction: column;
-  justify-content: center;
-  padding: 0.5em;
-}
-
-#panel{
-  display: flex;
-  text-align: center;
-  flex-direction: column;
-  justify-content: center;
-  padding: 0.5em;
-}
-
-#News{
-  display: flex;
-  text-align: center;
-  flex-direction: column;
-  justify-content: center;
-  padding: 0.5em;
-}
-
-#Contacts{
-  display: flex;
-  text-align: center;
-  flex-direction: column;
-  justify-content: center;
-  padding: 0.5em;
-}
-
-
 
 .generic-anchor {
 	color: blue;
@@ -192,22 +132,19 @@ footer {
   width: 100%
 }
 .footer-list-top {
-  flex: 1;
-  min-width: 200px;
-  padding: 0 10px;
+  width: 33.333%
 }
 .footer-list-top > li {
   text-align: center;
   padding-bottom: 10px
 }
 .footer-list-header {
-  padding: 1px 0 3px 0;
-  font-size: 16px;
+  padding: 10px 0 5px 0;
   color: #fff;
-  font: 1.2vw "Oswald", sans-serif
+  font: 2.3vw "Oswald", sans-serif
 }
 .footer-list-anchor {
-  font: 1em "Open Sans", sans-serif
+  font: 1.3em "Open Sans", sans-serif
 }
 .footer-social-section {
   width: 100%;
@@ -234,7 +171,7 @@ footer {
 .footer-social-connect {
   display: flex;
   align-items: center;
-  font: 1.5em "Oswald", sans-serif;
+  font: 3.5em "Oswald", sans-serif;
   color: #fff
 }
 .footer-social-small {
@@ -242,7 +179,7 @@ footer {
   padding: 0px 20px
 }
 .footer-social-overlap > a {
-  font-size: 1.5em
+  font-size: 3em
 }
 .footer-social-overlap > a:not(:first-child) {
   margin-left: 0.38em
@@ -257,15 +194,12 @@ footer {
   margin-right: auto
 }
 .footer-bottom-wrapper {
-  font-size: 0.9em;
+  font-size: 1.5em;
   color: #fff
 }
 .footer-address {
   display: inline;
   font-style: normal
-}
-.footer.flex-rw {
-  flex-wrap: nowrap;
 }
 @media only screen and (max-width: 768px) {
   .footer-list-header {
@@ -289,7 +223,7 @@ footer {
     font-size: 5em
   }
   .footer-list-top {
-    flex: 1;
+    width: 100%
   }
   .footer-list-header {
     font-size: 3em;
