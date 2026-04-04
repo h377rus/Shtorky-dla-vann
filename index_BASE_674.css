@@ -1,96 +1,55 @@
 @import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Comforter&display=swap');
-
 .dotgothic16-regular { /*главный шрифт(всратый) - Рома*/
     font-family: "DotGothic16", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
 
-.rubik-mono-one-regular {
-  font-family: "Rubik Mono One", monospace;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.comforter-regular {
-  font-family: "Comforter", cursive;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.logo-text1 { /*для главного лого1 - Рома*/
-  font-style: italic;
-  font-family: "Rubik Mono One";
-  font-size: 6vh;
-}
-
-.logo-text2 { /*для главного лого2 - Рома*/
-  font-style: italic;
-  font-family: "Comforter";
-  font-size: 3vh;
+.logo-text { /*для главного лого - Рома*/
+    font-style: italic;
+    font-family: "DotGothic16";
 }
 
 .simple-text { /*для просто текста - Рома*/
-  font-family: "DotGothic16";
-  font-size: 12px;
+    font-family: "DotGothic16";
+    font-size: 12px;
 }
 
 .simple-btn { /*для нормисной кнопки - Рома*/
-  font-family: "DotGothic16";
-  width: 10vw;
-  height: fit-content;
-  border: 7px rgb(174, 174, 174) inset;
-  background-color: rgb(174, 174, 174);
-  text-decoration: underline;
+    font-family: "DotGothic16";
+    width: 10vw;
+    height: fit-content;
+    border: 7px rgb(174, 174, 174) inset;
+    background-color: rgb(174, 174, 174);
+    text-decoration: underline;
 }
 
 .simple-btn:active { /*для нормисной кнопки(при тыке) - Рома*/
-  background-color: rgb(144, 144, 144);
+    background-color: rgb(144, 144, 144);
 }
 
 .big-btn { /*для биг кнопки(пока тот же что и для нормиснойы) - Рома*/
-  font-family: "DotGothic16";
-  width: 10vw;
-  height: fit-content;
-  border: 7px rgb(174, 174, 174) inset;
-  background-color: rgb(174, 174, 174);
-  text-decoration: underline;
+    font-family: "DotGothic16";
+    width: 10vw;
+    height: fit-content;
+    border: 7px rgb(174, 174, 174) inset;
+    background-color: rgb(174, 174, 174);
+    text-decoration: underline;
 }
 
 .big-btn:active { /*для биг кнопки(при тыке) - Рома*/
-  background-color: rgb(144, 144, 144);
+    background-color: rgb(144, 144, 144);
 }
 
-body {
-	font: 12px "DotGothic16";
+.body {
+	font: 11px "Open Sans", sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	margin: 0;
-  padding: 0%;
+	margin: auto;
 	display: flex;
 	flex-flow: column nowrap;
 	justify-content: space-between;
   background: linear-gradient(#e66465, #9198e5);
-}
-
-header {
-  position: block;
-  border-bottom: 5px solid black;
-  background-image: url('imgs/white-shtorki-background.jpeg');
-  background-size: contain;
-  background-position: center;
-  background-repeat: repeat;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 4vh;
-  width: 100%;
-  height: 15vh;
-  margin: 0;
-  padding: 0;
 }
 
 ul {
@@ -100,65 +59,6 @@ ul {
 a {
 	text-decoration: none;
 }
-
-#name-head{
-  display: flex;
-  text-align: center;
-  flex-direction: column;
-  justify-content: center;
-  padding: 0.5em;
-}
-
-#about{
-  display: flex;
-  text-align: center;
-  flex-direction: column;
-  justify-content: center;
-  padding: 0.5em;
-
-}
-
-#portfolio{
-  display: flex;
-  text-align: center;
-  flex-direction: column;
-  justify-content: center;
-  padding: 0.5em;
-}
-
-#popular{
-  display: flex;
-  text-align: center;
-  flex-direction: column;
-  justify-content: center;
-  padding: 0.5em;
-}
-
-#panel{
-  display: flex;
-  text-align: center;
-  flex-direction: column;
-  justify-content: center;
-  padding: 0.5em;
-}
-
-#News{
-  display: flex;
-  text-align: center;
-  flex-direction: column;
-  justify-content: center;
-  padding: 0.5em;
-}
-
-#Contacts{
-  display: flex;
-  text-align: center;
-  flex-direction: column;
-  justify-content: center;
-  padding: 0.5em;
-}
-
-
 
 .generic-anchor {
 	color: blue;
@@ -182,8 +82,9 @@ main {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  color: rgb(0, 0, 0);
-  line-height: 1;
+  font: 1em "Oswald", sans-serif;
+  color: rgb(155,155,155);
+  line-height: 1
 }
 footer {
   background: rgb(55,55,55);
@@ -191,22 +92,19 @@ footer {
   width: 100%
 }
 .footer-list-top {
-  flex: 1;
-  min-width: 200px;
-  padding: 0 10px;
+  width: 33.333%
 }
 .footer-list-top > li {
   text-align: center;
   padding-bottom: 10px
 }
 .footer-list-header {
-  padding: 1px 0 3px 0;
-  font-size: 16px;
+  padding: 10px 0 5px 0;
   color: #fff;
-  font: 1.2vw "Oswald", sans-serif
+  font: 2.3vw "Oswald", sans-serif
 }
 .footer-list-anchor {
-  font: 1em "Open Sans", sans-serif
+  font: 1.3em "Open Sans", sans-serif
 }
 .footer-social-section {
   width: 100%;
@@ -233,7 +131,7 @@ footer {
 .footer-social-connect {
   display: flex;
   align-items: center;
-  font: 1.5em "Oswald", sans-serif;
+  font: 3.5em "Oswald", sans-serif;
   color: #fff
 }
 .footer-social-small {
@@ -241,7 +139,7 @@ footer {
   padding: 0px 20px
 }
 .footer-social-overlap > a {
-  font-size: 1.5em
+  font-size: 3em
 }
 .footer-social-overlap > a:not(:first-child) {
   margin-left: 0.38em
@@ -256,15 +154,12 @@ footer {
   margin-right: auto
 }
 .footer-bottom-wrapper {
-  font-size: 0.9em;
+  font-size: 1.5em;
   color: #fff
 }
 .footer-address {
   display: inline;
   font-style: normal
-}
-.footer.flex-rw {
-  flex-wrap: nowrap;
 }
 @media only screen and (max-width: 768px) {
   .footer-list-header {
@@ -288,7 +183,7 @@ footer {
     font-size: 5em
   }
   .footer-list-top {
-    flex: 1;
+    width: 100%
   }
   .footer-list-header {
     font-size: 3em;
@@ -353,264 +248,6 @@ footer {
   .footer-bottom-wrapper {
     font-size: 1.3em
   }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.navigate {
-
- display: flex;
- justify-content: center;
- margin-left: 10vw ;
- margin-right: 10vw;
- border: 1px solid red;
- gap: 20px;
- 
-
-}
-.navigate a{
-  /* display: flex; */
-  /* justify-content: center; */
-  text-align: center;
-
-  text-decoration: none;
-  background-color:lime;
-  flex:1
-  
-
-}
-.navigate a p{
-  display: none;
-  color:#acffff;
-}
-@keyframes animations {
-  0%{filter: brightness(1);}
-  95%{filter: brightness(0) saturate(100%) invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);}
-  100%{display: none;}
-}
-@keyframes animations2 {
-  
-  0%{filter: brightness(0) saturate(100%) invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);}
-  100%{filter: brightness(1);}
-}
-@media (min-width: 500px) {
-  .navigate a:hover span{
-    animation: animations 1s linear 1 forwards;
-
-}
-.navigate a:hover p{
-  display: block;
-  animation: animations2 1s linear 1 forwards;
-}
-
 }
 
 
