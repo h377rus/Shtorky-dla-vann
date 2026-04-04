@@ -252,3 +252,261 @@ footer {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.navigate {
+
+ display: flex;
+ justify-content: center;
+ margin-left: 10vw ;
+ margin-right: 10vw;
+ border: 1px solid red;
+ gap: 20px;
+ 
+
+}
+.navigate a{
+  /* display: flex; */
+  /* justify-content: center; */
+  text-align: center;
+
+  text-decoration: none;
+  background-color:lime;
+  flex:1
+  
+
+}
+.navigate a p{
+  display: none;
+  color:#acffff;
+}
+@keyframes animations {
+  0%{filter: brightness(1);}
+  95%{filter: brightness(0) saturate(100%) invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);}
+  100%{display: none;}
+}
+@keyframes animations2 {
+  
+  0%{filter: brightness(0) saturate(100%) invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);}
+  100%{filter: brightness(1);}
+}
+@media (min-width: 500px) {
+  .navigate a:hover span{
+    animation: animations 1s linear 1 forwards;
+
+}
+.navigate a:hover p{
+  display: block;
+  animation: animations2 1s linear 1 forwards;
+}
+
+}
+
+
+
