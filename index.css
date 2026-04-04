@@ -81,7 +81,8 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  font: 10em "Oswald", sans-serif;
+  flex-direction: column;
+  font: 1em "Oswald", sans-serif;
   color: rgb(155,155,155);
   line-height: 1
 }
