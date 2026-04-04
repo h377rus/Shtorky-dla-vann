@@ -41,15 +41,8 @@
     background-color: rgb(144, 144, 144);
 }
 
-.body {
-	font: 11px "Open Sans", sans-serif;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	margin: auto;
-	display: flex;
-	flex-flow: column nowrap;
-	justify-content: space-between;
-  background: linear-gradient(#e66465, #9198e5);
+body {
+    background: linear-gradient(135deg, #ffb6c1, #ffc0cb, #b0e0e6, #87ceeb);
 }
 
 ul {
