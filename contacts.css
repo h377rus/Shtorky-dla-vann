@@ -1,0 +1,242 @@
+.curtain {
+  width: 100%; /* Ensures the component is the full screen width */
+  height: 100vh;
+  overflow: hidden; /* Allows you to slide the panels outside the container without them showing */
+}
+  
+.curtain__wrapper {
+   /*These make sure the curtain covers the whole container*/
+  width: 100%; 
+  height: 100%;
+}
+      
+.curtain__panel {
+   /*These sets a background color as well as an img to make it look like an actual curtain*/
+  background: #8b0000;
+  background-image: url("https://images.vexels.com/media/users/17482/101168/preview2/01bdac45c37aff22f75230abf3f019d4-red-curtain-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 50%; /* Each panel takes up half the container */
+  height: 100vh; /* Used for demo purposes */
+  float: left; /* Makes sure panels are side-by-side */
+  position: relative; /* Needed to define the z-index */
+  z-index: 2; /* Places the panels in front of the prize */
+  transition: all 1s ease-out; /* Animates the sliding transition */
+}
+
+.curtain__panel--left {
+  /* Slides the panel to the left out of the container */
+  transform: translateX(-100%);
+}
+
+.curtain__panel--right {
+  /* Slides the panel to the right out of the container */
+  transform: translateX(100%);
+}
+  
+.curtain__prize {
+ background: #333;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Центрирование по горизонтали */
+  justify-content: center; /* Центрирование по вертикали */
+  overflow-y: auto; /* Добавляет прокрутку если контент не помещается */
+}
+.container {
+  max-width: 500px; /* Ограничивает максимальную ширину контейнера */
+  width: 90%; /* Адаптивная ширина на маленьких экранах */
+  margin: 0 auto; /* Центрирование контейнера */
+}
+input[type=checkbox] {
+  position: absolute; /* Force the checkbox at the start of the container */
+  cursor: pointer; /* Indicate the curtain is clickable */
+  width: 100%; /* The checkbox is as wide as the component */
+  height: 100%; /* The checkbox is as tall as the component */
+  z-index: 100; /* Make sure the checkbox is on top of everything else */
+  opacity: 0; /* Hide the checkbox */
+}
+
+/* When the checkbox is checked... */       
+/* Slide the first panel in */
+input[type=checkbox]:checked ~ div.curtain__panel--left {
+  transform: translateX(0);
+}
+        
+/* Slide the second panel in */
+input[type=checkbox]:checked ~ div.curtain__panel--right {
+  transform: translateX(0);
+}
+
+:root {
+  --gray: #808080;
+  --gray-medium: #c1bfbf;
+  --gray-light: #d3d3d3;
+  --paper-color: #eff8fe;
+}
+
+body {
+  background: #fec0ca;
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Courier New, sans-serif;
+}
+
+h1 {
+  font-size: 1.2rem;
+}
+
+.paper {
+  position: relative;
+  padding: 10px;
+  width: 12rem;
+  min-height: 120px;
+  background: linear-gradient(
+    135deg,
+    var(--paper-color),
+    85%,
+    var(--gray-light)
+  );
+  box-shadow: 1px 0 1px var(--gray);
+  text-align: center;
+}
+
+/* Tacks */
+.paper::before {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--gray);
+}
+
+.paper::after {
+  content: "";
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--gray);
+}
+
+.numbers {
+ display: flex;
+  min-height: 11rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  max-width: 210px; /* Ограничение ширины списка контактов */
+}
+
+
+.number {
+  position: relative;
+  width: 100%;
+  background: linear-gradient(
+    to right,
+    var(--paper-color),
+    80%,
+    var(--gray-light)
+  );
+  border-top: 1px dashed var(--gray);
+  box-shadow: 1px 1px 1px var(--gray);
+  transform-origin: center top;
+}
+
+.link-wrapper {
+  position: absolute;
+  display: flex;
+  top: 0;
+  transform: rotate(90deg);
+  transform-origin: top left;
+  font-size: 0.9rem;
+  margin-left: 1.7rem;
+  margin-top: 1rem;
+  align-items: center;
+  white-space: nowrap; /* Предотвращает перенос текста */
+}
+
+.link-wrapper i {
+  margin-right: 5px;
+  font-size: 1.1rem;
+}
+
+.link-wrapper a {
+  text-decoration-style: dashed;
+  font-family: sans-serif;
+}
+
+.number:nth-child(2) {
+  transform: skew(-5deg, 0deg);
+  background: var(--paper-color);
+}
+
+.number:nth-child(2)::after,
+.number:nth-child(4)::after {
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    var(--gray-light),
+    5%,
+    rgba(211, 211, 211, 0)
+  );
+}
+
+.number:nth-child(1),
+.number:nth-child(3) {
+  background: linear-gradient(
+    to right,
+    var(--paper-color),
+    60%,
+    var(--gray-light)
+  );
+}
+
+.number:nth-child(4) {
+  transform: skew(-8deg, 0deg);
+  background: var(--paper-color);
+}
+
+.number:nth-child(5) {
+  transform: skew(-3deg, 0deg);
+}
+
+.container {
+  max-width: 400px; /* Ещё уже, если нужно */
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* Адаптация для мобильных устройств */
+@media (max-width: 768px) {
+  .link-wrapper {
+    font-size: 0.7rem;
+    margin-left: 1.2rem;
+    margin-top: 0.8rem;
+  }
+  
+  .container {
+    width: 95%;
+  }
+  
+  .paper {
+    width: 10rem;
+  }
+}
