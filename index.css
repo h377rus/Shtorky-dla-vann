@@ -75,13 +75,13 @@ body {
   background: linear-gradient(#e66465, #9198e5);
 }
 
-header {
-  position: block;
+header { /*меняется цвет :D*/
   border-bottom: 5px solid black;
   background-image: url('imgs/white-shtorki-background.jpeg');
   background-size: contain;
   background-position: center;
   background-repeat: repeat;
+  background-blend-mode: multiply;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -91,6 +91,20 @@ header {
   height: 15vh;
   margin: 0;
   padding: 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.color1 {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.color2 {
+  background-color: rgba(255, 0, 225, 0.9);
+}
+
+.color3 {
+  background-color: rgba(255, 172, 56, 0.9);
 }
 
 ul {
