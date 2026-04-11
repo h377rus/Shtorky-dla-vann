@@ -1,0 +1,45 @@
+const get_clicked_territory = document.getElementById('game_object')
+const counter = document.getElementById('counter')
+const trasher  = document.getElementById('trash')
+
+const object = document.getElementById('game_object')
+const urls_grass = ['C:/Users/Astrokadet66/Documents/project2/Shtorky-dla-vann/imgs/good2.png',
+    'C:/Users/Astrokadet66/Documents/project2/Shtorky-dla-vann/imgs/bad.png', 'C:/Users/Astrokadet66/Documents/project2/Shtorky-dla-vann/imgs/good.png'
+]
+var count_trava = 0
+get_clicked_territory.addEventListener('click', function(){
+    if (count_trava == 1){
+        counter.innerHTML = String((parseFloat(counter.innerHTML)-0.001).toFixed(3))
+        alert("Упс, ты тронул ужасную траву! Твоя скидка снизилась")
+    }
+    else{
+        counter.innerHTML = String((parseFloat(counter.innerHTML)+0.001).toFixed(3))
+    }
+
+
+    if (count_trava ==2){count_trava = 0}
+    else{count_trava+=1}
+    
+    object.src = urls_grass[count_trava]
+})
+
+
+trasher.addEventListener('click', function(){
+
+
+
+    if (count_trava == 1){
+        count_trava +=1
+        
+
+    }
+    else{
+        counter.innerHTML = String((parseFloat(counter.innerHTML)-0.001).toFixed(3))
+        alert("Упс, ты выкинул хорошую траву! Твоя скидка снизилась")
+        if (count_trava ==2){count_trava = 0}
+        else{count_trava+=1}
+
+    }
+    
+    object.src = urls_grass[count_trava]
+})
