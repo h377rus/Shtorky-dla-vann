@@ -1,7 +1,12 @@
+body{
+
+     background: linear-gradient(to right, blue, pink,red );background-color:
+}
+
 .main_game{
 
-    display:flex ;
-    flex-direction: column;
+    display:grid ;
+    place-items: center;
     
 
 }
@@ -15,6 +20,8 @@
     background-image: url('imgs/pole.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+
+
 }
 
 .main_game span{
@@ -33,4 +40,61 @@
 
     height: 90%;
     width: 90%;
+}
+
+.trasher{
+
+    border-radius: 100px;
+    border: none;
+    height: 15vh;
+    width: 30vw;
+    background-image: url('imgs/trash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: red;
+    font-weight: 900;
+}
+.trasher:hover{
+    height: 30vh;
+    width: 40vw;
+
+}
+.menu_game{
+
+
+    background-color: black;
+    color: red;
+    border-radius: 30px;
+    border: 10px green solid;
+}
+
+
+
+.modal {
+  display: none; /* скрыт по умолчанию */
+  /* темный фон при открытии модалки должен быть на всю страницу */
+  position: fixed; 
+  z-index: 1; /* поверх всех элементов */
+  left: 0;
+  top: 0;
+  width: 100vw; /* полная ширина */
+  height: 100vh; /* полная высота */
+  background-color: rgba(0,0,0,0.4); /* цвет фона - прозрачный черный */
+}
+
+
+.modal-content {
+  background-color: #fff;
+  /* окно будет находится по центру по горизонтали и с отступом сверху в 100 px */
+  margin: 100px auto; 
+  padding: 20px;
+  width: 50%; 
+  font-size: 20px;
+  /* разнесем текст и кнопоку по краям окна */
+  display: flex;
+  justify-content: space-between;
+ }
+
+.span_modal {
+  cursor: pointer;
 }

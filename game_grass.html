@@ -11,23 +11,48 @@
    
 
     <div class="main_game" id = 'main_game'>
-
+        <div class = 'menu_game'>
         <h1>Игра по троганью травы</h1>
         <p>Кликай по хорошим травам, за плохие - баллы забираем</p>
         <p>1 клик = 0.001% скидки</p>
-        <span>Ваша скидка: <p id = 'counter'>0</p> %</span>
+        <span>Ваша скидка: <p id = 'counter'>0</p> %</span>  </div> 
 
         <div id = 'game'>
             <img id = 'game_object' src="imgs/good2.png">
 
 
         </div>
-        <button id = 'trash'> Выкинуть сорняк </button>
+        <button class = 'trasher' id = 'trash'> <p>Выкинуть сорняк </p></button>
 
 
     </div>
+        <button id = 'bought_button'>Купить шторки♿</button>
+    
     
 </body>
 
+
+<div id = 'modal_erorr' class="modal">
+    <div class="modal-content">
+      <p>Упс</p>
+      <span class = 'span_modal' onclick="closeModal_err();">&times</span>
+    </div>
+  </div>
+</body>
+
+
+
+<script>
+
+
+
+    const modal_err = document.getElementById("modal_erorr")[0];
+    window.openModal_err = () => {
+    modal_err.stylе.displаy = "block"; }
+                                   
+    window.closeModal_err = () => {
+        modal_err.stylе.displаy = "none";
+    }
+</script>
 <script src="game_grass.js"></script>
 </html>
