@@ -3,7 +3,7 @@ const counter = document.getElementById('counter')
 const trasher  = document.getElementById('trash')
 
 const object = document.getElementById('game_object')
-const urls_grass = ['C:/Users/Astrokadet66/Documents/project2/Shtorky-dla-vann/imgs/good2.png',
+const urls_grass = ['C:/Users/Astrokadet63/Documents/project2/Shtorky-dla-vann/imgs/good2.png',
     'C:/Users/Astrokadet66/Documents/project2/Shtorky-dla-vann/imgs/bad.png', 'C:/Users/Astrokadet66/Documents/project2/Shtorky-dla-vann/imgs/good.png'
 ]
 var count_trava = 0

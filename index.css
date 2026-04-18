@@ -75,15 +75,14 @@ body {
   background: linear-gradient(#e66465, #9198e5);
 }
 
-header { /*меняется цвет :D*/
-  border-bottom: 5px solid black;
+header {
+  border-bottom: 5px solid black; /*Жестко меняются цвета и омг анимация :D*/
   background-image: url('imgs/white-shtorki-background.jpeg');
   background-size: contain;
   background-position: center;
   background-repeat: repeat;
   background-blend-mode: multiply;
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: center;
   gap: 4vh;
@@ -92,7 +91,22 @@ header { /*меняется цвет :D*/
   margin: 0;
   padding: 0;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+
+  transition: transform 0.2s ease, background-color 0.4s ease;
+}
+
+header:active {
+  transform: scale(0.97);
+}
+
+.animate-click {
+  animation: clickAnim 0.4s ease;
+}
+
+@keyframes clickAnim {
+  0%   { transform: scale(1); }
+  50%  { transform: scale(1.05); }
+  100% { transform: scale(1); }
 }
 
 .color1 {
@@ -105,6 +119,42 @@ header { /*меняется цвет :D*/
 
 .color3 {
   background-color: rgba(255, 172, 56, 0.9);
+}
+
+.color4 {
+  background-color: rgba(0, 255, 0, 0.9);
+}
+
+.color5 {
+  background-color: rgba(255, 255, 35, 0.9);
+}
+
+.color6 {
+  background-color: rgba(50, 0, 135, 0.9);
+}
+
+.color7 {
+  background-color: rgba(255, 200, 150, 0.9);
+}
+
+.color8 {
+  background-color: rgba(9, 207, 207, 0.9);
+}
+
+.color9 {
+  background-color: rgba(95, 0, 51, 0.9);
+}
+
+.color10 {
+  background-color: rgba(161, 82, 82, 0.9);
+}
+
+.color11 {
+  background-color: rgba(34, 75, 0, 0.9);
+}
+
+.color12 {
+  background-color: rgba(255, 224, 88, 0.9);
 }
 
 ul {
