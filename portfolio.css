@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
+.dotgothic16-regular { /*главный шрифт(всратый) - Рома*/
+    font-family: "DotGothic16", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  header {
+    border-bottom: 5px solid black;
+    background-image: url('imgs/white-shtorki-background.jpeg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: repeat;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 4vh;
+    width: 100%;
+    height: 15vh;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .logo {
+    font-style: italic;
+    font-family: "Rubik Mono One", monospace;
+    font-size: 6vh;
+  }
+  
+  body {
+    font-family: 'DotGothic16', sans-serif;
+    background: white;
+    background: linear-gradient(#e66465, #9198e5);
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+
+  }
+  
+  .login-box {
+    width: 30vw;
+    margin: 50px auto;
+    padding: 20px;
+  }
+  
+  .text {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'DotGothic16', sans-serif;
+    font-size: large;
+  }
+  
+  .input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    box-sizing: border-box;
+    font-family: 'DotGothic16', sans-serif;
+  }
+  
+  .warning {
+    font-size: 12px;
+    color: red;
+    margin-bottom: 10px;
+    min-height: 20px;
+  }
+  
+  .btn {
+    width: 100%;
+    padding: 10px;
+    background-color:lime;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-family: 'DotGothic16', sans-serif;
+  }
+  
+  .btn:hover {
+    background-color:rgb(37, 191, 37); 
+ }
+  
+  .status {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 14px;
+    min-height: 40px;
+  }
