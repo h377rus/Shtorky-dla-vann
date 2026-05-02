@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comforter&display=swap');
+
+.dotgothic16-regular { /*главный шрифт(всратый) - Рома*/
+    font-family: "DotGothic16", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.rubik-mono-one-regular {
+  font-family: "Rubik Mono One", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.comforter-regular {
+  font-family: "Comforter", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.logo-text1 { /*для главного лого1 - Рома*/
+  font-style: italic;
+  font-family: "Rubik Mono One";
+  font-size: 6vh;
+}
+
+.simple-text { /*для главного лого2 - Рома*/
+  font-style: italic;
+  font-family: "DotGothic16";
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(#9198e5, #e66465);
+    background-size: 100%;
+    background-repeat: repeat;
+}
+
+header { /*меняется цвет :D*/
+  border-bottom: 5px solid black;
+  background-image: url('imgs/white-shtorki-background.jpeg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: repeat;
+  background-blend-mode: multiply;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+  gap: 4vh;
+  width: 100%;
+  height: 15vh;
+  margin: 0;
+  padding: 0;
+}
+
+.back_btn {
+    width: 5vw;
+    height: 45%;
+    margin-left: 2.5vw;
+    border: 5px #e66465 solid;
+    border-radius: 5px;
+    cursor: pointer;
+    background: linear-gradient(#9198e5, #e66465);
+}
+
+.games {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    padding-top: 20vh;
+    gap: 10vw;
+}
+
+.game-panel {
+    align-self: center;
+    width: 20vw;
+    height: 20vw;
+    border: 5px rgb(52, 52, 52) solid;
+    border-radius: 15px;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 3vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.grass {
+    background-image: url('imgs/grass.png');
+    color:chartreuse;
+    text-decoration-color: chartreuse;
+}
+
+.gambling {
+    background-image: url('imgs/premium.jpeg');
+    color: darkkhaki;
+    text-decoration-color: darkkhaki;
+}
