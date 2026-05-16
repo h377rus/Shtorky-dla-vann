@@ -17,3 +17,27 @@ header.addEventListener("click", function () {
   void header.offsetWidth;
   header.classList.add("animate-click");
 });
+
+
+
+
+
+get_all_buttons = document.querySelectorAll('.button_redirection')
+const track = document.getElementById('sound-blast');
+
+
+get_all_buttons.forEach(el => {
+    el.addEventListener('click', function(){
+
+      a =  new Promise (() => {
+        track.play()
+        setTimeout(() => {
+          window.location.href = el.id+'.html';
+        }, 500);})
+      
+      
+      
+
+
+    })
+});
